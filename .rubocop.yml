@@ -8,11 +8,20 @@ AllCops:
 
   Exclude:
     - bin/**/*
+    - db/schema.rb
     - vendor/**/*
     - test/**/*
 
 Metrics/LineLength:
   Max: 150
+
+Metrics/AbcSize:
+  Exclude:
+    - db/migrate/**/*
+
+Metrics/MethodLength:
+  Exclude:
+    - db/migrate/**/*
 
 Style/Documentation:
   Enabled: false
